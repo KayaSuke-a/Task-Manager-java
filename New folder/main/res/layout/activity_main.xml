@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context="com.example.bie_daalt_02v.MainActivity"
+    android:background="@drawable/pexels1">
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/Text"
+        android:layout_marginTop="-40dp"
+        android:text="User's Name"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Text"
+            android:textColorHint="@color/HintText"
+            android:hint="Title"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edit_text_description"
+            android:layout_width="match_parent"
+            android:textColor="@color/Text"
+            android:textColorHint="@color/HintText"
+            android:layout_height="100dp"
+            android:hint="Description"
+            android:inputType="text" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="backMenu"
+                android:textColor="@color/Text"
+                android:backgroundTint="#8F5E5E5E"
+                android:text="Back"
+                tools:ignore="OnClick" />
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ResetTitle"
+                android:textColor="@color/Text"
+                android:backgroundTint="#8F5E5E5E"
+                android:text="Reset"
+                tools:ignore="OnClick" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="saveNote"
+                android:textColor="@color/Text"
+                android:backgroundTint="#8F5E5E5E"
+                android:text="Save" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
